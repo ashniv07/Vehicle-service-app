@@ -1,12 +1,14 @@
 package com.proj.vehicleserviceapp;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class HomePage {
     @GetMapping("/")
-    public String home() {
-        return "Welcome to the Service App!";
+    public String home(Model model) {
+        model.addAttribute("message", "Welcome to the Vehicle Service App");
+        return "home";
     }
 }
