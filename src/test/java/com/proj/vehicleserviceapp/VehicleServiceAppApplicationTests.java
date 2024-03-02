@@ -1,10 +1,10 @@
-package com.proj.service_app;
+package com.proj.vehicleserviceapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ServiceAppApplicationTests {
+class VehicleServiceAppApplicationTests {
 
 	@Test
 	void contextLoads() {
